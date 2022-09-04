@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 320px;
+}
+
+:root {
+  --blue: #3F2AFF;
+  --white: #fff;
+  --Comet: #555681;
+  --Steel_Gray: #212133;
+  --Ebony_Clay: #2E2B44;
+  --Dove_Gray: #666;
+  --Waterloo: #85859B;
+  --White_Lilac: #EDF0F9;
+}
+
+
+.header {
+  background: var(--blue);
+}
+
+
+
+.header__burger {
+  width: 20px;
+  height: 16.88px;
+  display: none;
+  position: relative;
+  background-color: var(--blue);
+  border: none;
+}
+
+.burger__line {
+  position: absolute;
+  left: 41%;
+  width: 20.63px;
+  height: 3px;
+  background-color: var(--white);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.burger__line:nth-child(1) {
+
+  top: 0;
+
+}
+
+.burger__line:last-child {
+  bottom: 0;
+}
+
+.burger__line:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.header__nav {
+  display: inline-block;
+
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__container {
+  padding: 30px 33px 25px 30px;
+}
+
+.header__links:not(:last-child) {
+  margin-right: 53px;
+}
+
+.header__links {
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.hero {
+  padding-top: 15px;
+  padding-bottom: 7px;
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, var(--Comet) 0%, var(--Steel_Gray) 100%);
+}
+
+.hero__content {
+  padding-top: 115px;
+}
+
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 62px;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.hero__link,
+.courses__link {
+  display: inline-block;
+  padding: 24px 77.5px;
+  background: var(--blue);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 72px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 17px;
+  width: 39%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--Ebony_Clay);
+}
+
+.about__content {
+  padding-top: 22px;
+}
+
+.about__descr {
+  margin: 0;
+  margin-bottom: 16px;
+  width: 63%;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--Dove_Gray);
+}
+
+.about__text-first,
+.about__text-second,
+.about__text-third {
+  margin: 0;
+  padding: 20px 0 19px 112px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--Dove_Gray);
+
+}
+
+.about__text-first {
+  background-image: url(../img/about__first.svg);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left center;
+}
+
+.about__text-second {
+  background-image: url(../img/about__second.svg);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left center;
+}
+
+.about__text-third {
+  padding-left: 109px;
+  background-image: url(../img/about__third.svg);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left center;
+}
+
+.teachers {
+  padding-top: 76px;
+  padding-bottom: 71px;
+  background: var(--Steel_Gray);
+}
+
+.teachers__img {
+  margin-bottom: 24px;
+  border-radius: 20px 20px 0 0;
+}
+
+.teachers__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.teachers__name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.teachers__desc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--Waterloo);
+}
+
+.courses__time {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  padding-left: 28px;
+  background-image: url(../img/time.svg);
+  background-size: 24px 24px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.courses__img {
+  border-radius: 20px 20px 0 0;
+}
+
+.courses__content {
+  position: relative;
+  min-height: 480px;
+  border-radius: 20px 20px 20px 20px;
+
+  background-color: var(--White_Lilac);
+
+}
+
+.courses__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--Steel_Gray);
+}
+
+.courses {
+  padding-top: 75px;
+  padding-bottom: 79px;
+}
+
+.courses__time-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white);
+}
+
+.courses__name {
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--Steel_Gray);
+}
+
+.courses__text-content {
+  padding: 28px 27px 30px 30px;
+}
+
+.courses__descr {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--Dove_Gray);
+
+}
+
+.courses__link {
+  padding: 20.5px 60px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.courses__top {
+  margin-bottom: 30px;
+}
+
+.courses__descr-third {
+  margin-bottom: 72px;
+}
+
+.footer__social-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+.footer__top {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  background: var(--Ebony_Clay);
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__social-list-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.footer__copy {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  color: var(--Ebony_Clay);
+}
+
+.footer__copy span {
+  color: var(--blue);
+}
